@@ -1,5 +1,5 @@
 # Introduction
-This application Using Google map for plotting Camera Location in SIngapore. Application Google Map and Using "https://data.gov.sg/dataset/traffic-images" Web api For 
+This application Using Google map for plotting Camera Location in Singapore. Application Using Google Map and Web api ("https://data.gov.sg/dataset/traffic-images")  For
 Getting Location information and camera Image. 
 
   Assumption
