@@ -4,10 +4,10 @@ Getting Location information and camera Image.
 
   Assumption
 
-  1. As per the web api Documentation need to refresh the map every 1 mint for every single mint for getting user experience.
-  2. Web required time stamp - As per the document we need to pass the time stamp, Eventhough we are not passing this param we will get the data.
-     For safer side application passing the mobile date on the web api. 
-     If user chnage mobile date it will r=trigger with that timestamp. It not a good pracise if we get the value from service then it will be good.
+  1. As per the web api Documentation need to refresh the map every 1 mint for every single mint for getting better user experience.
+  2. Web required time stamp - As per the web api documentation, we need to pass the time stamp, even though we are not passing this param we will get the data.
+     For safer side this application passing the device date to the web api.
+     If user change mobile device date, it will trigger web api with that timestamp. It is not a good practices if we get the value from service then it will be good.
 
 # Clean Code Advantages
 
