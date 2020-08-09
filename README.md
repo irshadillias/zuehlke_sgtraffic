@@ -31,10 +31,10 @@ This application uses MVVM Architecture, and kotlin DSL used instead of gradle. 
 
 Please use following Gradle/adb commands for executing this project:
 
-./gradlew runApp - Builds and install the debug apk on the current connected device.
-./gradlew compileApp - Builds the debug apk.
-./gradlew sgTrafficRunUnitTests - Execute unit tests (both unit and integration).
-./gradlew sgTrafficRunAcceptanceTests - Execute acceptance and instrumentation tests in the connected device.
+ * `./gradlew runApp` - Builds and install the debug apk on the current connected device.
+ * `./gradlew compileApp` - Builds the debug apk.
+ * `./gradlew runUnitTests` - Execute unit tests (both unit and integration).
+ * `./gradlew runAcceptanceTests` - Execute acceptance and instrumentation tests in the connected device.
 
 #Test Result
 ![HomePage](screenshots/landingpage.png "HomePage")
