@@ -33,7 +33,7 @@ Please use following Gradle/adb commands for executing this project:
 
  * `./gradlew runApp` - Builds and install the debug apk on the current connected device.
  * `./gradlew compileApp` - Builds the debug apk.
- * `./gradlew runUnitTests` - Execute unit tests (both unit and integration).
+ * `./gradlew sgTrafficRunUnitTests` - Execute unit tests (both unit and integration).
  * `./gradlew runAcceptanceTests` - Execute acceptance and instrumentation tests in the connected device.
 
 #Test Result
