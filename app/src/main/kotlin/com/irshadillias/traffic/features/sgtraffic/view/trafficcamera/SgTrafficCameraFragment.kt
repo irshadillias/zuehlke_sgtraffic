@@ -10,7 +10,6 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.irshadillias.traffic.BuildConfig
 import com.irshadillias.traffic.R
 import com.irshadillias.traffic.core.extension.failure
 import com.irshadillias.traffic.core.extension.observe
@@ -20,11 +19,11 @@ import com.irshadillias.traffic.core.platform.BaseFragment
 import com.irshadillias.traffic.core.utilities.Constants
 import com.irshadillias.traffic.features.sgtraffic.common.SgTrafficUtilities
 import com.irshadillias.traffic.features.sgtraffic.view.ui.CustomInfoWindowOfMarker
-import com.khalid.hamid.githubrepos.vo.lta.Api_info
-import com.khalid.hamid.githubrepos.vo.lta.Cameras
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
-import com.khalid.hamid.githubrepos.vo.lta.Location
-import kotlinx.android.synthetic.main.fragment_lta.*
+import com.irshadillias.traffic.features.sgtraffic.model.Api_info
+import com.irshadillias.traffic.features.sgtraffic.model.Cameras
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
+import com.irshadillias.traffic.features.sgtraffic.model.Location
+import kotlinx.android.synthetic.main.fragment_sgtrafficmap.*
 import javax.inject.Inject
 
 
@@ -43,7 +42,7 @@ class SgTrafficCameraFragment : BaseFragment(), OnMapReadyCallback {
         }
     }
 
-    override fun layoutId() = R.layout.fragment_lta
+    override fun layoutId() = R.layout.fragment_sgtrafficmap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,7 +69,6 @@ class SgTrafficCameraFragment : BaseFragment(), OnMapReadyCallback {
                 setMarkerMap(ltaResponse ?: GetTrafficResponse(emptyList(), Api_info("")))
                 addMarkers(markerMap)
                 ltaResponse?.let {
-                    // animating on Map only first time on first pin
                     if(!isZoomedIn){
                         zoomToPin(it.items[0].cameras[0].location)
                         isZoomedIn = true
@@ -94,7 +92,6 @@ class SgTrafficCameraFragment : BaseFragment(), OnMapReadyCallback {
      */
 
     override fun onMapReady(googleMap: GoogleMap) {
-        BuildConfig.APPLICATION_ID
         mMap = googleMap
         mMap.setInfoWindowAdapter(CustomInfoWindowOfMarker(this))
         mMap.uiSettings.isZoomControlsEnabled = true
@@ -103,13 +100,12 @@ class SgTrafficCameraFragment : BaseFragment(), OnMapReadyCallback {
         mMap.uiSettings.isScrollGesturesEnabled = true
         mMap.uiSettings.isZoomGesturesEnabled = true
         mMap.uiSettings.isMyLocationButtonEnabled = true
-        // hit api service
         fetchTrafficCameraDetail()
     }
 
     private fun checkReadyThen(actionDo : () -> Unit) {
         if (!::mMap.isInitialized) {
-            Toast.makeText(activity, "Map is not ready!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, "Map is not Initialized !!!", Toast.LENGTH_SHORT).show()
         } else {
             actionDo()
         }

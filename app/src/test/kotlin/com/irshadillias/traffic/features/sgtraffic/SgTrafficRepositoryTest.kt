@@ -5,7 +5,7 @@ import com.irshadillias.traffic.core.functional.Either
 import com.irshadillias.traffic.core.platform.NetworkHandler
 import com.irshadillias.traffic.features.sgtraffic.network.SgTrafficRepository
 import com.irshadillias.traffic.features.sgtraffic.network.SgTrafficService
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
 import com.nhaarman.mockitokotlin2.given
 import com.nhaarman.mockitokotlin2.verify
 import org.amshove.kluent.shouldEqual

@@ -1,6 +1,6 @@
 package com.irshadillias.traffic.features.sgtraffic.network
 
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
 import retrofit2.Call
 import retrofit2.Retrofit
 import javax.inject.Inject

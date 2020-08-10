@@ -3,10 +3,13 @@ package com.irshadillias.traffic.features.sgtraffic.network
 import com.irshadillias.traffic.core.exception.Failure
 import com.irshadillias.traffic.core.functional.Either
 import com.irshadillias.traffic.core.platform.NetworkHandler
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
 import retrofit2.Call
 import javax.inject.Inject
-
+/**
+ * @author irshad illias
+ * Get service Api Sg Repository for get SG camera details
+ */
 interface SgTrafficRepository {
     fun getTrafiicCamera(param : Map<String, String>): Either<Failure, GetTrafficResponse>
 

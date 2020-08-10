@@ -6,8 +6,7 @@ import com.irshadillias.traffic.core.platform.BaseViewModel
 import com.irshadillias.traffic.features.sgtraffic.common.SgTrafficConstants
 import com.irshadillias.traffic.features.sgtraffic.common.SgTrafficUtilities
 import com.irshadillias.traffic.features.sgtraffic.workers.SyncDataWorker
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
-import java.sql.Timestamp
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
 import java.util.*
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
@@ -33,6 +32,11 @@ class SgTrafficCameraViewModel
         return mapOf("date_time" to timeValue)
     }
 
+    /**
+     * @author irshad illias
+     * this repeated call implementation, with constrain
+     * But interval will be 15 mint so this approach not suit for this requirement.
+     */
     fun fetchData() {
         // Create Network constraint
         val constraints = Constraints.Builder()

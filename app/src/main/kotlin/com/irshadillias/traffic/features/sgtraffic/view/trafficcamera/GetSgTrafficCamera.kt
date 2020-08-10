@@ -2,7 +2,7 @@ package com.irshadillias.traffic.features.sgtraffic.view.trafficcamera
 
 import com.irshadillias.traffic.core.interactor.UseCase
 import com.irshadillias.traffic.features.sgtraffic.network.SgTrafficRepository
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
 import javax.inject.Inject
 
 class GetSgTrafficCamera

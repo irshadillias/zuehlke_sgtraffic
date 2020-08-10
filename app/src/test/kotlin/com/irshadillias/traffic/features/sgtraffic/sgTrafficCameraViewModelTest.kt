@@ -5,7 +5,7 @@ import com.irshadillias.traffic.AndroidTest
 import com.irshadillias.traffic.core.functional.Either
 import com.irshadillias.traffic.features.sgtraffic.view.trafficcamera.GetSgTrafficCamera
 import com.irshadillias.traffic.features.sgtraffic.view.trafficcamera.SgTrafficCameraViewModel
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
 import com.nhaarman.mockitokotlin2.given
 import kotlinx.coroutines.runBlocking
 import org.amshove.kluent.shouldEqualTo

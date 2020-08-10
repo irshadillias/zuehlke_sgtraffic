@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/zuehlke_sgtraffic.iml" filepath="$PROJECT_DIR$/zuehlke_sgtraffic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="zuehlke_sgtraffic/app" />
+      <module fileurl="file://$PROJECT_DIR$/zuehlke_sgtraffic.iml" filepath="$PROJECT_DIR$/zuehlke_sgtraffic.iml" group="zuehlke_sgtraffic" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuehlke_sgtraffic_buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/zuehlke_sgtraffic_buildSrc.iml" group="zuehlke_sgtraffic/zuehlke_sgtraffic_buildSrc" />
     </modules>
   </component>
 </project>

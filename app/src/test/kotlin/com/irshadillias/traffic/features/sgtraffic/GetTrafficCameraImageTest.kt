@@ -4,7 +4,7 @@ import com.irshadillias.traffic.UnitTest
 import com.irshadillias.traffic.core.functional.Either
 import com.irshadillias.traffic.features.sgtraffic.network.SgTrafficRepository
 import com.irshadillias.traffic.features.sgtraffic.view.trafficcamera.GetSgTrafficCamera
-import com.khalid.hamid.githubrepos.vo.lta.GetTrafficResponse
+import com.irshadillias.traffic.features.sgtraffic.model.GetTrafficResponse
 import com.nhaarman.mockitokotlin2.given
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyNoMoreInteractions

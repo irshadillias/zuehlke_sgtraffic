@@ -14,7 +14,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.Marker
 import com.irshadillias.traffic.R
 import com.irshadillias.traffic.core.platform.BaseFragment
-import com.khalid.hamid.githubrepos.vo.lta.Cameras
+import com.irshadillias.traffic.features.sgtraffic.model.Cameras
 
 class CustomInfoWindowOfMarker : GoogleMap.InfoWindowAdapter {
     var context: Fragment
