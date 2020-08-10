@@ -151,4 +151,13 @@ class SgTrafficCameraFragment : BaseFragment(), OnMapReadyCallback {
         handler.removeCallbacks(runnable)
     }
 
+    /*
+     * invoke service after restart application from back ground
+     */
+     fun onRestartActivity(){
+        if (::mMap.isInitialized) {
+            fetchTrafficCameraDetail()
+        }
+    }
+
 }
